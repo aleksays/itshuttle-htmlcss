@@ -1,0 +1,16 @@
+.box {
+  display: block;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.box__title {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
