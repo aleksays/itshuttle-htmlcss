@@ -20,8 +20,9 @@ input[type="submit"], button {
 body {
   font: 16px Roboto, sans-serif;
   font-weight: 400;
+  color: #111;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 50px 1fr;
   background-color: #f1f1f1;
 }
@@ -33,5 +34,5 @@ body {
 
 .main {
   grid-row: 2 / 3;
-  grid-column: 3 / 4;
+  grid-column: 2 / -2;
 }
