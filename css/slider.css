@@ -1,0 +1,113 @@
+.slider {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background: white;
+  height: 700px;
+}
+
+.slider__container {
+  width: 500%;
+  display: flex;
+  transition: transform 310ms cubic-bezier(.19,.11,.51,1.34);
+}
+
+.slider.autoplay .slider__container {
+  animation: slider 20s infinite ease-out;
+}
+.slider.autoplay .slider__nav {
+  display: none;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-20%);
+  }
+  30% {
+    transform: translateX(-20%);
+  }
+  40% {
+    transform: translateX(-40%);
+  }
+  50% {
+    transform: translateX(-40%);
+  }
+  60% {
+    transform: translateX(-60%);
+  }
+  70% {
+    transform: translateX(-60%);
+  }
+  80% {
+    transform: translateX(-80%);
+  }
+  90% {
+    transform: translateX(-80%);
+  }
+}
+
+.slider__slide {
+  position: relative;
+  width: 100%;
+}
+
+.slider__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 700px;
+}
+
+.slider__nav {
+  --gap: 5px;
+  --size: 15px;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc((var(--size) * 5) + (var(--gap) * 5));
+}
+
+.slider__nav-item {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: #555;
+  cursor: pointer;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+
+.slider [type="radio"] {
+  display: none;
+}
+
+#slide-1:checked ~ .slider__nav .slider__nav-item:nth-child(1),
+#slide-2:checked ~ .slider__nav .slider__nav-item:nth-child(2),
+#slide-3:checked ~ .slider__nav .slider__nav-item:nth-child(3),
+#slide-4:checked ~ .slider__nav .slider__nav-item:nth-child(4),
+#slide-5:checked ~ .slider__nav .slider__nav-item:nth-child(5) {
+  background-color: white;
+}
+
+#slide-2:checked ~ .slider__container {
+  transform: translateX(-20%);
+}
+#slide-3:checked ~ .slider__container {
+  transform: translateX(-40%);
+}
+#slide-4:checked ~ .slider__container {
+  transform: translateX(-60%);
+}
+#slide-5:checked ~ .slider__container {
+  transform: translateX(-80%);
+}
