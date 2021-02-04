@@ -3,7 +3,11 @@
   width: 100%;
   position: relative;
   background: white;
-  height: 700px;
+}
+
+.slider__wrapper {
+  width: 70%;
+  margin: 0 auto;
 }
 
 .slider__container {
@@ -57,11 +61,20 @@
   width: 100%;
 }
 
+.slider__slide figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  color: white;
+  background-color:rgba(0, 0, 0, 0.45);
+}
+
 .slider__image {
   width: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  height: 700px;
 }
 
 .slider__nav {
