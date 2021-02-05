@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Shuttle FrontEnd</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="/" class="nav-list__link">Forms</a></li>
+        <li class="nav-list__item"><a href="list.html" class="nav-list__link">Styled list</a></li>
+        <li class="nav-list__item active">Slider</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="page-heading">Slider</h1>
+    <div class="box slider__wrapper">
+      <div class="slider">
+        <input type="radio" id="slide-1" checked name="slide-nav">
+        <input type="radio" id="slide-2" name="slide-nav">
+        <input type="radio" id="slide-3" name="slide-nav">
+        <input type="radio" id="slide-4" name="slide-nav">
+        <input type="radio" id="slide-5" name="slide-nav">
+        
+        <div class="slider__nav">
+          <label for="slide-1" class="slider__nav-item"></label>
+          <label for="slide-2" class="slider__nav-item"></label>
+          <label for="slide-3" class="slider__nav-item"></label>
+          <label for="slide-4" class="slider__nav-item"></label>
+          <label for="slide-5" class="slider__nav-item"></label>
+        </div>
+        
+        <div class="slider__container">
+          <figure class="slider__slide" id="slide-img-1">
+            <img src="./assets/img/slide-1.jpg" alt="" class="slider__image">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+          <figure class="slider__slide" id="slide-img-2">
+            <img src="./assets/img/slide-2.jpg" alt="" class="slider__image">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+          <figure class="slider__slide" id="slide-img-3">
+            <img src="./assets/img/slide-3.jpg" alt="" class="slider__image">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+          <figure class="slider__slide" id="slide-img-4">
+            <img src="./assets/img/slide-4.jpg" alt="" class="slider__image">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+          <figure class="slider__slide" id="slide-img-5">
+            <img src="./assets/img/slide-5.jpg" alt="" class="slider__image">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
